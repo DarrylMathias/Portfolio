@@ -81,6 +81,9 @@
   .mymargin{
     margin-bottom: 7rem;
   }
+  .myicon{
+    border-radius: 50%;
+  }
   @media (max-width:600px){
     .p-1, .p-2,.p-3,.p-4,.p-5,.py-1, .py-2,.py-3,.py-4,.py-5{
       padding: 0.5rem !important;
