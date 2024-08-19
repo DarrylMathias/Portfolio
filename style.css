@@ -1,0 +1,171 @@
+*{
+  font-family: "Poppins", sans-serif;
+}
+.gradient-background {
+    background: linear-gradient(300deg, #000000, #CF0A0A, 
+    #EEEEEE);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  body{
+    display: flex;
+    justify-content: center;
+
+  }
+  .mainme{
+    width: 87vw;
+    background-color: #000000;
+    border-radius: 2rem;
+    box-shadow: 5px 5px;
+  }
+  .prefernce{
+    border-radius: 1rem;
+    margin-right: 3rem !important;
+    margin-left: 3rem !important;
+    margin-top: 2rem !important;
+    font-size: 22px;
+  }
+  .mynav{
+    border-radius: 1rem;
+    background-color: #1a1a1a !important;
+    color: white !important;
+  }
+  a{
+    text-decoration: none;
+    color: currentColor;
+  }
+  nav a:hover{
+    color: #CF0A0A !important;
+    font-weight: 700 !important;
+  }
+  .intro{
+    width: auto;
+  }
+  .hello{
+    font-size: 4rem!important;
+  }
+  .darryl{
+    font-size: 6rem ;
+    color: #CF0A0A !important;
+  }
+  .me{
+    font-family: "Merriweather", serif;
+  }
+  .skills{
+    width: auto;
+  }
+  .mycarousel{
+    height: 400px;
+    width: 400px;
+  }
+  .mycarousel img{
+    max-height: 400px;
+  }
+  .mycarousel div img{
+    object-fit: cover;
+  }
+  .ordinary{
+    font-size: 1rem;
+  }
+  .mymargin{
+    margin-bottom: 7rem;
+  }
+  @media (max-width:600px){
+    .p-1, .p-2,.p-3,.p-4,.p-5,.py-1, .py-2,.py-3,.py-4,.py-5{
+      padding: 0.5rem !important;
+    }
+    .m-1, .m-2,.m-3,.m-4,.m-5{
+      margin: 0rem !important;
+    }
+    .my-5{
+      margin-top: 1rem !important;
+      margin-bottom: 1rem !important;
+    }
+    .mainme{
+      width: 95vw;
+    }
+    .prefernce{
+      margin-right: 1rem !important;
+      margin-left: 1rem !important;
+      margin-top: 0.5rem !important;
+    }
+    .hello{
+      font-size: 2.5rem!important;
+    }
+    .darryl{
+      font-size: 3rem ;
+      color: #CF0A0A !important;
+    }
+    .me{
+      font-size: 2rem !important;
+    }
+    .darryl .me{
+      font-size: 3rem ;
+      color: #CF0A0A !important;
+    }
+    .mycarousel{
+      height: 200px;
+      width: 200px;
+    }
+    .mymargin{
+      margin-bottom: 1rem;
+    }
+    .fs-5, .lead{
+      font-size: 1.25rem !important;
+    }
+  }
+  @media (max-width:1100px) and (min-width:600px){
+    .p-1, .p-2,.p-3,.p-4,.p-5,.py-1, .py-2,.py-3,.py-4,.py-5{
+      padding: 1rem !important;
+    }
+    .m-1, .m-2,.m-3,.m-4,.m-5{
+      margin: 0.5rem !important;
+    }
+    .my-5{
+      margin-top: 1rem !important;
+      margin-bottom: 1rem !important;
+    }
+    .mainme{
+      width: 90vw;
+    }
+    .prefernce{
+      margin-right: 1.5rem !important;
+      margin-left: 1.5rem !important;
+      margin-top: 1rem !important;
+    }
+    .hello{
+      font-size: 2.5rem!important;
+    }
+    .darryl{
+      font-size: 4rem ;
+      color: #CF0A0A !important;
+    }
+    .me{
+      font-size: 3rem !important;
+    }
+    .darryl .me{
+      font-size: 4rem ;
+      color: #CF0A0A !important;
+    }
+    img{
+      width: 50% !important;
+    }
+    .mycarousel{
+      height: 200px;
+      width: 200px;
+    }
+    .mymargin{
+      margin-bottom: 1rem;
+    }
+  }
