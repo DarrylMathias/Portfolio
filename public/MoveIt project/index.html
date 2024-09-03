@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- <html lang="en" data-bs-theme="dark"> -->
+<html lang="en" data-bs-theme = "light">
 
 <head>
   <meta charset="UTF-8" />
@@ -14,7 +14,15 @@
     border-radius: .75rem;
 }
   </style>
-  <script>
+    <script>
+    function darkMode(){
+      var html = document.querySelector("html");
+      if(html.getAttribute("data-bs-theme") == "light"){
+        html.setAttribute("data-bs-theme","dark");
+      }else{
+        html.setAttribute("data-bs-theme","light");
+      }
+    }
   </script>
 </head>
 
@@ -37,6 +45,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="cursor: pointer;" onCLick="darkMode();">Toggle Mode</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
