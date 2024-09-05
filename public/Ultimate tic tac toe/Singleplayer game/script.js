@@ -1,5 +1,15 @@
 var currentPlayer = "X"; // Start with Player X
 var availableTerms = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  var winPatterns = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9], // Rows
+    [1, 4, 7],
+    [2, 5, 8],
+    [3, 6, 9], // Columns
+    [1, 5, 9],
+    [3, 5, 7], // Diagonals
+  ];
 var flag = 1; // 1 for Player X's turn, 0 for AI's turn
 var dots = window.setInterval( function() {
   var wait = document.getElementById("wait");
@@ -114,16 +124,7 @@ async function aiPlay() {
 }
 
 function checkWin(player) {
-  var winPatterns = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9], // Rows
-    [1, 4, 7],
-    [2, 5, 8],
-    [3, 6, 9], // Columns
-    [1, 5, 9],
-    [3, 5, 7], // Diagonals
-  ];
+
 
   for (var i = 0; i < winPatterns.length; i++) {
     var pattern = winPatterns[i];
