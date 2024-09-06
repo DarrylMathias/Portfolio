@@ -117,8 +117,8 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 async function aiPlay() {
-  await sleep(Math.random() * 2000 + 300);
-  console.log("Sleep time " + Math.random() * 2000 + 300 + " ms");
+  await sleep(350);
+  //console.log("Sleep time " + Math.random() * 2000 + 300 + " ms");
   if(!playSmart()){
     var randIndex = Math.floor(Math.random() * availableTerms.length);
     var play = availableTerms[randIndex];
