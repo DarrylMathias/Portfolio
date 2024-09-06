@@ -33,10 +33,17 @@ function makeMove(index) {
   }
 }
 function playSmart() {
+
+      // Checks to occupy center space
+      if(document.getElementById("b5").value === ""){
+        document.getElementById("b5").value = "O";
+        availableTerms.splice(4, 1);
+        console.log("Played center move")
+        return true;
+      }
+      // First check to play own smart move
   for (let i = 0; i < winPatterns.length; i++) {
     var pattern = winPatterns[i];
-
-    // Checking to play own smart move
     if (
       document.getElementById(`b${pattern[0]}`).value === "O" &&
       document.getElementById(`b${pattern[1]}`).value === "O" &&
@@ -67,9 +74,10 @@ function playSmart() {
       console.log("Played smart move: Winning move")
       return true;
     }
-
-
-    // Checking to tackle opponent
+  }
+  // Second tackle opponent
+  for (let i = 0; i < winPatterns.length; i++) {
+    var pattern = winPatterns[i];
     if (
       document.getElementById(`b${pattern[0]}`).value === "X" &&
       document.getElementById(`b${pattern[1]}`).value === "X" &&
