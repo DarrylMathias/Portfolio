@@ -1,0 +1,72 @@
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+    grid-area: 1/1/2/3;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 52px;
+    margin-top: 30px;
+    text-align: center;
+}
+.sec1 {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(1, 1, 74);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    gap: 30px;
+}
+.sec1 > div{
+    width: 30%;
+    text-align: center;
+}
+.sec1 a{
+    text-decoration: none;
+    color: white;
+}
+img{
+    height: 200px;
+    display: block;
+    margin: 2vw auto 0 auto;
+    filter: invert(1);
+}
+small{
+    font-size: 14px;
+}
+footer {
+    margin-top: 5%;
+    color: #EEEEEE;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.25rem;
+  }
+  @media (max-width:800px) {
+    .sec1{
+        flex-direction: column;
+        
+    }
+    .sec1 > div{
+        width: 80%;
+        text-align: center;
+    }
+  }
+  @media (max-width:400px){
+    .sec1{
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .sec1 > div{
+        width: 100%;
+        text-align: center;
+    }
+    h1{
+        font-size: 40px;
+    }
+    img{
+        height: 100px;
+    }
+  }
