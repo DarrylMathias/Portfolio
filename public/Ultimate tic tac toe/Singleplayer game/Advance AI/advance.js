@@ -41,9 +41,10 @@ function makeMove(index) {
 let isValid = true;
 let isValid1 = true;
 var corners = [1, 3, 7, 9];
+var edges = [2, 4, 6, 8];
 var play = corners[Math.floor(Math.random() * 4)];
 function playSpecial() {
-  // Check for player centre
+  // Check for player centre, if yes then randomly make a corner move
   if (document.getElementById("b5").value === "X" && isValid) {
     document.getElementById(`b${play}`).value = "O"
     availableTerms.splice(availableTerms.indexOf(play), 1);
@@ -51,7 +52,8 @@ function playSpecial() {
     isValid = false;
     return true;
   }
-  if (play == 1 || play == 9 && isValid1) {
+  // If corner move 1 or 9, then next move 3, basically obstruction for x pattern
+  if ((play == 1 || play == 9) && isValid1 && document.getElementById("b5").value === "X") {
     isValid1 = false;
     if (document.getElementById("b3").value === "") {
       document.getElementById("b3").value = "O"
@@ -64,7 +66,9 @@ function playSpecial() {
       console.log("Played special move: Strategic corner");
       return true;
     }
-  } else if (play == 3 || play == 7 && isValid1) {
+  } 
+  // If corner move 3 or 7, then next move 9, basically obstruction for x pattern
+  else if ((play == 3 || play == 7) && isValid1 && document.getElementById("b5").value === "X") {
     isValid1 = false;
     if (document.getElementById("b1").value === "") {
       document.getElementById("b1").value = "O"
@@ -78,7 +82,29 @@ function playSpecial() {
       return true;
     }
   }
-  // Then check to play own special move
+  // For positions where x tries to gain L
+  if (document.getElementById("b2").value == "X" && document.getElementById("b4").value == "X" && document.getElementById("b1").value == "") {
+    document.getElementById("b1").value = "O"
+    availableTerms.splice(availableTerms.indexOf(1), 1);
+    console.log("Played special move: Stopped from creating an L");
+    return true;
+  } else if (document.getElementById("b2").value == "X" && document.getElementById("b6").value == "X" && document.getElementById("b3").value == "") {
+    document.getElementById("b3").value = "O"
+    availableTerms.splice(availableTerms.indexOf(3), 1);
+    console.log("Played special move: Stopped from creating an L");
+    return true;
+  } else if (document.getElementById("b4").value == "X" && document.getElementById("b8").value == "X" && document.getElementById("b7").value == "") {
+    document.getElementById("b7").value = "O"
+    availableTerms.splice(availableTerms.indexOf(7), 1);
+    console.log("Played special move: Stopped from creating an L");
+    return true;
+  } else if (document.getElementById("b6").value == "X" && document.getElementById("b8").value == "X" && document.getElementById("b9").value == "") {
+    document.getElementById("b9").value = "O"
+    availableTerms.splice(availableTerms.indexOf(9), 1);
+    console.log("Played special move: Stopped from creating an L");
+    return true;
+  }
+  // Then check to play own special move semi x
   for (let i = 0; i < trickPatterns.length; i++) {
     var pattern = trickPatterns[i];
     if (
