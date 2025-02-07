@@ -1,138 +1,173 @@
-*{
+* {
   font-family: "Poppins", sans-serif;
 }
 .gradient-background {
-    background: linear-gradient(300deg, #000000, #CF0A0A, 
-    #EEEEEE);
-    background-size: 180% 180%;
-    animation: gradient-animation 18s ease infinite;
-  }
-.myhover:hover{
-  box-shadow: 0 8px 17px 0 rgba(255, 255, 255, 0.42), 0 6px 20px 0 rgba(255, 255, 255, 0.43);
-  transition: all .3s ease-in-out;
+  background: linear-gradient(300deg, #000000, #cf0a0a, #eeeeee);
+  background-size: 180% 180%;
+  animation: gradient-animation 6s ease infinite;
 }
-  @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+.myhover:hover {
+  box-shadow: 0 8px 17px 0 rgba(255, 255, 255, 0.42),
+    0 6px 20px 0 rgba(255, 255, 255, 0.43);
+  transition: all 0.3s ease-in-out;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
   }
-  body{
-    display: flex;
-    justify-content: center;
-
+  50% {
+    background-position: 100% 50%;
   }
-  .mainme{
-    width: 87vw;
-    background-color: #000000;
-    border-radius: 2rem;
-    box-shadow: 5px 5px;
+  100% {
+    background-position: 0% 50%;
   }
-  .prefernce{
-    border-radius: 1rem;
-    margin-right: 3rem !important;
-    margin-left: 3rem !important;
-    margin-top: 2rem !important;
-    font-size: 22px;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.mainme {
+  width: 87vw;
+  background-color: #000000;
+  border-radius: 2rem;
+  box-shadow: 5px 5px;
+}
+.prefernce {
+  border-radius: 1rem;
+  margin-right: 3rem !important;
+  margin-left: 3rem !important;
+  margin-top: 2rem !important;
+  font-size: 22px;
+}
+.mynav {
+  border-radius: 1rem;
+  background-color: #1a1a1a !important;
+  color: white !important;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+nav a:hover {
+  color: #cf0a0a !important;
+  font-weight: 700 !important;
+}
+.intro {
+  width: auto;
+}
+.hello {
+  font-size: 4rem !important;
+}
+.typing {
+  display: inline-block;
+}
+.darryl {
+  font-size: 6rem;
+  color: #cf0a0a !important;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid;
+  animation: typing 1.75s steps(11) forwards, blink 1s step-end infinite;
+  /* animation: typing 1.75s steps(11) infinite alternate,
+                blink 1s step-end infinite; */
+}
+@keyframes typing {
+  from {
+    width: 0;
   }
-  .mynav{
-    border-radius: 1rem;
-    background-color: #1a1a1a !important;
-    color: white !important;
+  to {
+    width: 100%;
   }
-  a{
-    text-decoration: none;
-    color: currentColor;
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
-  nav a:hover{
-    color: #CF0A0A !important;
-    font-weight: 700 !important;
+}
+.me {
+  font-family: "Merriweather", serif;
+}
+.skills {
+  width: auto;
+}
+.mycarousel {
+  height: 400px;
+  width: 400px;
+}
+.mycarousel img {
+  max-height: 400px;
+}
+.mycarousel div img {
+  object-fit: cover;
+}
+.ordinary {
+  font-size: 1rem;
+}
+.mymargin {
+  margin-bottom: 7rem;
+}
+.myicon {
+  border-radius: 50%;
+}
+@media (max-width: 600px) {
+  .p-1,
+  .p-2,
+  .p-3,
+  .p-4,
+  .p-5,
+  .py-1,
+  .py-2,
+  .py-3,
+  .py-4,
+  .py-5 {
+    padding: 0.5rem !important;
   }
-  .intro{
-    width: auto;
+  .m-1,
+  .m-2,
+  .m-3,
+  .m-4,
+  .m-5 {
+    margin: 0rem !important;
   }
-  .hello{
-    font-size: 4rem!important;
+  .my-5 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
   }
-  .darryl{
-    font-size: 6rem ;
-    color: #CF0A0A !important;
+  .mainme {
+    width: 95vw;
   }
-  .me{
-    font-family: "Merriweather", serif;
+  .prefernce {
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+    margin-top: 0.5rem !important;
   }
-  .skills{
-    width: auto;
+  .hello {
+    font-size: 2.5rem !important;
   }
-  .mycarousel{
-    height: 400px;
-    width: 400px;
+  .darryl {
+    font-size: 3rem !important;
+    color: #cf0a0a !important;
   }
-  .mycarousel img{
-    max-height: 400px;
+  .me {
+    font-size: 3rem !important;
   }
-  .mycarousel div img{
-    object-fit: cover;
+  .darryl .me {
+    font-size: 3rem !important;
+    color: #cf0a0a !important;
   }
-  .ordinary{
-    font-size: 1rem;
+  .mycarousel {
+    height: 200px;
+    width: 200px;
   }
-  .mymargin{
-    margin-bottom: 7rem;
+  .mymargin {
+    margin-bottom: 1rem;
   }
-  .myicon{
-    border-radius: 50%;
+  .fs-5,
+  .lead {
+    font-size: 1.25rem !important;
   }
-  @media (max-width:600px){
-    .p-1, .p-2,.p-3,.p-4,.p-5,.py-1, .py-2,.py-3,.py-4,.py-5{
-      padding: 0.5rem !important;
-    }
-    .m-1, .m-2,.m-3,.m-4,.m-5{
-      margin: 0rem !important;
-    }
-    .my-5{
-      margin-top: 1rem !important;
-      margin-bottom: 1rem !important;
-    }
-    .mainme{
-      width: 95vw;
-    }
-    .prefernce{
-      margin-right: 1rem !important;
-      margin-left: 1rem !important;
-      margin-top: 0.5rem !important;
-    }
-    .hello{
-      font-size: 2.5rem!important;
-    }
-    .darryl{
-      font-size: 3rem !important;
-      color: #CF0A0A !important;
-    }
-    .me{
-      font-size: 3rem !important;
-    }
-    .darryl .me{
-      font-size: 3rem !important;
-      color: #CF0A0A !important;
-    }
-    .mycarousel{
-      height: 200px;
-      width: 200px;
-    }
-    .mymargin{
-      margin-bottom: 1rem;
-    }
-    .fs-5, .lead{
-      font-size: 1.25rem !important;
-    }
-  }
-  /*@media (max-width:1100px) and (min-width:600px){
+}
+/*@media (max-width:1100px) and (min-width:600px){
     .p-1, .p-2,.p-3,.p-4,.p-5,.py-1, .py-2,.py-3,.py-4,.py-5{
       padding: 1rem !important;
     }
