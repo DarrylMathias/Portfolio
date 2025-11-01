@@ -1,6 +1,53 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+/* Custom modal to match portfolio theme */
+.custom-modal {
+  background: #0c0c0c; /* deep black to match your cards */
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* Header & footer clean layout */
+.modal-header,
+.modal-footer {
+  background: transparent;
+  border: none;
+}
+
+/* Buttons */
+.btn-secondary {
+  background-color: #222;
+  color: #ddd;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.btn-secondary:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-danger {
+  background: linear-gradient(90deg, #b30000, #ff0000);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.btn-danger:hover {
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.9);
+  transform: scale(1.03);
+}
+/* Text adjustments */
+.modal-title {
+  font-weight: 700;
+  color: #ff3c3c;
+}
+.modal-body p {
+  font-size: 1.1rem;
+  color: #ddd;
+}
 .gradient-background {
   background: linear-gradient(300deg, #000000, #cf0a0a, #eeeeee);
   background-size: 180% 180%;

@@ -32,6 +32,26 @@
 
 <body class="gradient-background">
   <!-- Deployed to Vercel -->
+  <!-- Migration Modal -->
+  <div class="modal fade" id="migration-modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content custom-modal">
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Migration Details</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>New site launched!
+            Explore the updated portfolio → darrylmathias.vercel.app</p>
+        </div>
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="https://darrylmathias.vercel.app"><button type="button" class="btn btn-danger">Open new portfolio</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class=" my-5 mainme prefernce">
     <div class="container">
       <section class="mymargin" id="nav">
@@ -85,9 +105,9 @@
                         </svg></a></li>
                     <li><a class="dropdown-item" href="mailto:darrylnevmat@gmail.com"><svg xmlns="
                         http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope"
-                        viewBox="0 0 16 16">
-                        <path
-                          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                          viewBox="0 0 16 16">
+                          <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
                         </svg>
                       </a></li>
                     <li><a class="dropdown-item" href="https://www.quora.com/profile/Darryl-Mathias-5"><svg
@@ -254,7 +274,8 @@
             <div class="myhover col-xl-7 col-sm-12 p-3 my-5 mynav mx-auto">
               <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 me"><a
                   href="https://darrylmathias.github.io/ByteGuide/">ByteGuide</a></h2>
-              <p class="fs-5 mb-4 p-1">ByteGuide is a modern recipe website designed to help food enthusiasts explore and create delicious dishes effortlessly.</p>
+              <p class="fs-5 mb-4 p-1">ByteGuide is a modern recipe website designed to help food enthusiasts explore
+                and create delicious dishes effortlessly.</p>
               <a href="https://darrylmathias.github.io/ByteGuide/" class="btn btn-outline-light btn-lg px-4">View</a>
               </h1>
             </div>
@@ -368,7 +389,7 @@
       </section>
     </div>
   </div>
-  
+  <script src="script.js"></script>
 </body>
 
 </html>
